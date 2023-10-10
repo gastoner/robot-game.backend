@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGame", "RobotGame\RobotGame.csproj", "{FAC09781-D161-4A62-80E1-76AD5B173DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGame.Services", "RobotGame.Services\RobotGame.Services.csproj", "{8F4E891C-05CE-49F4-972D-59A60E0FE71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGame.Services.Impl", "RobotGame.Services.Impl\RobotGame.Services.Impl.csproj", "{84E83AFF-4FF2-4A9E-B91D-AE436F623529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGame.Dto", "RobotGame.Dtos\RobotGame.Dto.csproj", "{7473D32F-D182-4DB4-844B-F130F26C3337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGame.Data", "RobotGame.Data\RobotGame.Data.csproj", "{42E45C0E-E11F-4CC0-B715-AC7922A46370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGame.Data.Impl", "RobotGame.Data.Impl\RobotGame.Data.Impl.csproj", "{810D17D8-3E1A-4FA3-AFBA-285D10CC3808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGame.Domain", "RobotGame.Domain\RobotGame.Domain.csproj", "{3C9CD35F-C758-49E1-A5CE-DE9543266FE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC09781-D161-4A62-80E1-76AD5B173DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC09781-D161-4A62-80E1-76AD5B173DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC09781-D161-4A62-80E1-76AD5B173DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC09781-D161-4A62-80E1-76AD5B173DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4E891C-05CE-49F4-972D-59A60E0FE71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4E891C-05CE-49F4-972D-59A60E0FE71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4E891C-05CE-49F4-972D-59A60E0FE71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4E891C-05CE-49F4-972D-59A60E0FE71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E83AFF-4FF2-4A9E-B91D-AE436F623529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E83AFF-4FF2-4A9E-B91D-AE436F623529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E83AFF-4FF2-4A9E-B91D-AE436F623529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E83AFF-4FF2-4A9E-B91D-AE436F623529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7473D32F-D182-4DB4-844B-F130F26C3337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7473D32F-D182-4DB4-844B-F130F26C3337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7473D32F-D182-4DB4-844B-F130F26C3337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7473D32F-D182-4DB4-844B-F130F26C3337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E45C0E-E11F-4CC0-B715-AC7922A46370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E45C0E-E11F-4CC0-B715-AC7922A46370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E45C0E-E11F-4CC0-B715-AC7922A46370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E45C0E-E11F-4CC0-B715-AC7922A46370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810D17D8-3E1A-4FA3-AFBA-285D10CC3808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810D17D8-3E1A-4FA3-AFBA-285D10CC3808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810D17D8-3E1A-4FA3-AFBA-285D10CC3808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810D17D8-3E1A-4FA3-AFBA-285D10CC3808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9CD35F-C758-49E1-A5CE-DE9543266FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9CD35F-C758-49E1-A5CE-DE9543266FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9CD35F-C758-49E1-A5CE-DE9543266FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9CD35F-C758-49E1-A5CE-DE9543266FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F19528AE-0D3B-4C38-BAA5-EC87012BCC1F}
+	EndGlobalSection
+EndGlobal

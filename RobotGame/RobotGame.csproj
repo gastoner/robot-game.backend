@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3acd45dd-897f-475a-a14e-d8bdc32238be</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RobotGame.Data.Impl\RobotGame.Data.Impl.csproj" />
+    <ProjectReference Include="..\RobotGame.Data\RobotGame.Data.csproj" />
+    <ProjectReference Include="..\RobotGame.Domain\RobotGame.Domain.csproj" />
+    <ProjectReference Include="..\RobotGame.Dtos\RobotGame.Dto.csproj" />
+    <ProjectReference Include="..\RobotGame.Services.Impl\RobotGame.Services.Impl.csproj" />
+    <ProjectReference Include="..\RobotGame.Services\RobotGame.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mappers\" />
+  </ItemGroup>
+
+</Project>
