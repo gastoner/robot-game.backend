@@ -15,12 +15,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Get date
-      - run: echo "MY_DATE=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Initi Variables
+        run: echo "MY_DATE=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
 
       - name: Deploy
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.14 # This is the action
+        uses: akhileshns/heroku-deploy@v3.12.14 # This is the action
         with:
           heroku_api_key: $HEROKU_API_KEY
           heroku_app_name: robot-game.backend-${{env.MY_DATE}}
