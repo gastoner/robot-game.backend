@@ -28,3 +28,4 @@ jobs:
           heroku_app_name: robot-game
           heroku_email: $HEROKU_MAIL
           usedocker: true
+          dontuseforce: true
