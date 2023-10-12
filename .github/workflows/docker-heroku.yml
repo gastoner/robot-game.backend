@@ -20,14 +20,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
-      - name: Initi Variables
-        run: echo "MY_DATE=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
 
       - name: Deploy
         uses: akhileshns/heroku-deploy@v3.12.14
         with:
           heroku_api_key: $HEROKU_API_KEY
-          heroku_app_name: rg-be-${{env.MY_DATE}}
+          heroku_app_name: robot-game
           heroku_email: $HEROKU_MAIL
           usedocker: true
