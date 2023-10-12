@@ -25,6 +25,6 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.12.14 # This is the action
         with:
           heroku_api_key: $HEROKU_API_KEY
-          heroku_app_name: robot-game.backend-${{env.MY_DATE}}
+          heroku_app_name: rg.be-${{env.MY_DATE}}
           heroku_email: $HEROKU_MAIL
           usedocker: true
