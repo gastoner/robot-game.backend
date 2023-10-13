@@ -1,0 +1,28 @@
+name: Deploy Docker image
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+env:
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  HEROKU_MAIL: ${{ secrets.HEROKU_MAIL }}
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Deploy
+        uses: akhileshns/heroku-deploy@v3.12.14
+        with:
+          heroku_api_key: $HEROKU_API_KEY
+          heroku_app_name: robot-game
+          heroku_email: $HEROKU_MAIL
+          usedocker: true
+          appdir: "RobotGame"
