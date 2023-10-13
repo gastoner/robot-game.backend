@@ -6,11 +6,12 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-RUN dotnet restore "RobotGame/RobotGame.csproj"
-RUN dotnet build "RobotGame/RobotGame.csproj" -c Release -o /app/build
+RUN ls
+RUN dotnet restore "RobotGame.csproj"
+RUN dotnet build "RobotGame.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "RobotGame/RobotGame.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "RobotGame.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
