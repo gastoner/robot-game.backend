@@ -6,11 +6,7 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-WORKDIR /src
-COPY ["RobotGame/RobotGame.csproj", "RobotGame/"]
-RUN dotnet restore "RobotGame/RobotGame.csproj"
-COPY . .
-WORKDIR "/src/RobotGame"
+WORKDIR /RobotGame
 RUN dotnet build "RobotGame.csproj" -c Release -o /app/build
 
 FROM build AS publish
