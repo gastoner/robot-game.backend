@@ -10,6 +10,7 @@ WORKDIR /RobotGame
 RUN dotnet build "RobotGame.csproj" -c Release -o /app/build
 
 FROM build AS publish
+WORKDIR /RobotGame
 RUN dotnet publish "RobotGame.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
